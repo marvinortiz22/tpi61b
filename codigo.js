@@ -53,7 +53,6 @@ var fila="<tr><td class='id'></td><td class='foto'></td><td class='price'></td><
 	}
 
 function obtenerProductos() {
-	  alert("Se mostrarán los productos")
 	  fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
             .then(data=>{productos=data;listarProductos(data)})
